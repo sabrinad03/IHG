@@ -1,0 +1,113 @@
+.main{
+    overflow: hidden;
+    max-width: 1120px;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+.homepromos, .homepromos2 {
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.homepromos .back a,
+.homepromos .next a,
+.homepromos2 .back a,
+.homepromos2 .next a{
+    display: block;
+    width: 10px;
+    height: 20px;
+    z-index: 999;
+}
+
+.homepromos .back,
+.homepromos2 .back {
+    background: url(carousel-arrow-left.png) left bottom;
+    position: absolute;
+    overflow: hidden;
+    width: 21px;
+    height: 37px;
+    top: 106px;
+    left: 0;
+    z-index: 2;
+    opacity: .8;
+    cursor:  pointer;
+}
+
+.homepromos .back:hover,
+.homepromos2 .back:hover{
+    opacity: 1;
+}
+
+.homepromos .next,
+.homepromos2 .next{
+    background: url(carousel-arrow-right.png) right bottom;
+    position: absolute;
+    overflow: hidden;
+    width: 21px;
+    height: 37px;
+    top: 106px;
+    right: 0;
+    z-index: 2;
+    opacity: .8;
+    cursor:  pointer;
+}
+
+.homepromos .next:hover,
+.homepromos2 .next:hover{
+    opacity: 1;
+}
+
+.homepromos .promoarea,
+.homepromos2 .promoarea{
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.homepromos .promoarea .caroufredsel_wrapper,
+.homepromos2 .promoarea .caroufredsel_wrapper{
+    margin:0 auto !important;
+    min-height:  274px;
+}
+
+.homepromos .promoscroll,
+.homepromos2 .promoscroll{
+    width: 8000px;
+}
+
+.homepromos .promo,
+.homepromos2 .promo{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 250px;
+    margin: 0 16px 0 0;
+}
+
+.homepromos div img,
+.homepromos2 div img{
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.homepromos p,
+.homepromos2 p{
+    padding: 0;
+    margin: 0;
+}
+
+.homepromos a,
+.homepromos2 a{
+    font-size: 15px;
+    line-height: 14px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #32373f;
+    cursor:  pointer;
+}
