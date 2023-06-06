@@ -1,0 +1,875 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+/*** End of Reset ***/
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*** End of Reset ***/
+
+
+.cfdebug {
+display: none;
+}
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+	.mobileDashboard {
+	display: none;
+	}
+	#mobileProgramSupport {
+	display: none;
+	}
+	.n3btnMobile{
+	display: none;
+	}
+	.n3btnDesktop{
+	display: block;
+	}
+}
+
+@media screen 
+and (min-device-width: 1600px) 
+and (max-device-width: 3600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+	.mobileDashboard {
+	display: none;
+	}
+	#mobileProgramSupport {
+	display: none;
+	}
+	.n3btnMobile{
+	display: none;
+	}
+	.n3btnDesktop{
+	display: block;
+	}
+}
+
+
+
+
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) { 
+
+}
+
+
+
+
+
+
+/* ----------- Tablet View ----------- */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+	/*** Login Screen CSS Begin ***/
+	.container {
+	width: 100%;
+	}
+	.brands img {
+	display: none;
+	}
+	#loginPage .boxright {
+	background: rgba(255,255,255,0) !important;
+	}
+	#loginPage .headerbox {
+	border-bottom: 0px solid white;
+	}
+	#loginPage .beforeBrandbar {
+	display: none;
+	}
+	#loginPage .logintable tr {
+	border-top: 0px !important;
+	}
+	#loginPage .bg-not-login{
+	display: none !important;
+	}
+	#loginPage {
+	background-image: url(/includes/images/home-mobile.jpg)!important;
+	}
+	#loginPage #nav2 {
+	display: none;
+	}
+	#loginPage header .logo {
+	left: 0;
+	right: 0;
+	margin: auto;
+	}
+	#loginPage .Loginh3 {
+	color: #D96832;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: right;
+	padding-right: 20px;
+	}
+	#loginPage .programSupportH3 a{
+	color:#a0a0a0;
+	font-weight: 600;
+	font-size: 24px;
+	text-transform: uppercase;
+	}
+	#loginPage .frm-container {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	}
+	#loginPage .frm-container-2 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	}
+	#loginPage tr td .login-frm-text {
+	padding: 15px;
+	width: 80% !important;
+	/* max-width: 550px; */
+	color: #fff !important;
+	background-color: #515151 !important;
+	border-radius: 25px;
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	color: white;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	color: white;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	color: white;
+	}
+	input.btn.btn-primary.loginSubmit {
+	width: 278px !important;
+	height: 48px;
+	font-size: 18px;
+	}
+	#loginPage .logintable .title {
+	font-size: 24px;
+	color: #000;
+	font-weight: 700;
+	}
+	#loginPage #main .table .self-enrollment {
+	height: 48px;
+	width: 90% !important;
+	max-width: 700px;
+	color: #fff !important;
+	/* background-color: #515151 !important; */
+	border-radius: 25px;
+	font-size: 20px;
+	/* min-width: 700px; */
+	}
+
+	form .login {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.login .login-grp {
+		margin: 0 auto;
+	}
+
+	.login {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.login-grp {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	input.frm_text {
+		/* margin: 10px auto; */
+		height: 30px;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 30px;
+	}
+
+	span.frm_label {
+		font-size: 30px;
+		padding: 50px;
+		margin: 17px; 
+		
+		line-height: 40px;
+	}
+
+	.login-grp input {
+		font-size: 20px;
+	}
+
+	/*** Login Screen CSS End ***/
+
+	/*** Home Screen CSS Begins ***/
+	.mobileDashboard {
+	display: none;
+	}
+	.bgphotobox .bg-not-login {
+	display: block !important;
+	}
+	.boxright {
+	background: rgba(255,255,255,0.9) !important;
+	}
+	#main{
+	background: rgba(255,255,255,0) !important;
+	}
+	.boxright header{
+	background: rgba(255,255,255,0) !important;
+	}
+	#mobileProgramSupport {
+	display: none;
+	}
+	/*** Home Screen CSS End ***/
+	.n3btnMobile{
+	display: none;
+	}
+	.n3btnDesktop{
+	display: block;
+	}
+	.table .table {
+	background-color: rgba(255,255,255,0);
+	}
+}
+
+
+/* MEDIA QUERY FOR SUB 767 PX WIDTH SCREENS */
+
+@media only screen 
+and (max-device-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+	
+	/*** Login Screen CSS Begin ***/
+	.logintable .SelfEnrollmentBtn {
+	height: auto;
+	word-wrap: break-word;
+	font-size: 0.75em;
+	}
+
+	.logintable input, .logintable .table input[type="button"] {
+	max-width: 400px !important;
+	width: 100% !important;
+	}
+		
+	.container {
+	width: 100%;
+	}
+	.brands img {
+	display: none;
+	}
+	#loginPage .container .boxright {
+	background: rgba(255,255,255,0) !important;
+	}
+	.beforeBrandbar {
+	display: none !important;
+	}
+	.logintable tr {
+	border-top: 0px !important;
+	}
+	#loginPage .bg-not-login{
+	display: none !important;
+	}
+	#loginPage {
+	background-image: url(/includes/images/home-mobile.jpg)!important;
+	}
+	#loginPage .headerbox {
+	border-bottom: 0px;
+	}
+	#nav2 {
+	/* display: none; */
+	left: 0px;
+	top:100px;
+	}
+
+	#nav2 .nav2-email {
+		display: none;
+	}
+
+	header .logo {
+	left: 0;
+	right: 0;
+	margin: auto;
+	}
+	#loginPage .Loginh3 {
+	color: #D96832;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: right;
+	padding-right: 60px;
+	}
+	#loginPage .programSupportH3 a{
+	color:#a0a0a0;
+	font-weight: 600;
+	font-size: 36px;
+	text-transform: uppercase;
+	}
+	#loginPage .frm-container {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	}
+	#loginPage .frm-container-2 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	}
+	#loginPage tr td .login-frm-text {
+	padding: 23px 0;
+	width: 80% !important;
+	/* max-width: 550px; */
+	color: #fff !important;
+	background-color: #515151 !important;
+	border-radius: 25px;
+	margin-bottom: 13px;
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+	font-size: 18px;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	color: white;
+	font-size: 18px;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	color: white;
+	font-size: 18px;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	color: white;
+	font-size: 18px;
+	}
+	#loginPage input.btn.btn-primary.loginSubmit {
+	width: 278px !important;
+	height: 60px;
+	font-size: 26px;
+	}
+	#loginPage .logintable .title {
+	font-size: 28px;
+	color: #000;
+	text-decoration: uppercase;
+	text-transform: uppercase;
+	margin-top: 50px;
+	}
+	#loginPage #main .table .self-enrollment {
+	height: 68px;
+	width: 90% !important;
+	max-width: 700px;
+	color: #fff !important;
+	/* background-color: #515151 !important; */
+	border-radius: 25px;
+	font-size: 20px;
+	/* min-width: 700px; */
+	border: 2px solid white;
+	}
+	#loginPage span.frm_label{
+	font-size: 32px;
+	}
+	.logintable tr {
+	border-top: 0px solid white !important;
+	}
+	/*** Login Screen CSS Ends ***/
+
+	/*** Home Screen CSS Begins ***/
+	.featuredProperties {
+	display: none;
+	}
+
+	.quicklinks h3.titles {
+	color: black;
+	text-align: center;
+	border-top: 1px solid black;
+	vertical-align: middle;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	max-width: 700px;
+	width: 90%;
+
+	border-bottom: 1px solid black;
+	font-size: 26px;
+	}
+
+	.titlesHomePage {
+	background-color: #737072;
+	height: 140px;
+	position: relative;
+	}
+	.quicklinks {
+	border-top: 0px;
+	margin: 0px;
+	margin-top: 50px;
+	}
+	.ql-header{
+	margin-bottom: 7px;
+	background:#e5b8a3 url(/assets/nav3-icon-plus.png) left center no-repeat !important;
+	}
+	.ql-header:hover, .ql-header:active, .ql-header:focus{
+	background: #D96832 url(/assets/nav3-icon-plus-white.png) left center no-repeat !important;
+	}
+
+	.ql-header.active, .ql-header.active:hover {
+	background: #D96832 url(/assets/nav3-icon-minus.png) left center no-repeat !important;
+	}
+	.ql-header a{
+	font-size: 20px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	}
+	.mainpageWelcomeMessage{
+	display: none;
+	}
+	.messageBoard {
+	display: none;
+	}
+	.msgPages {
+	display: none;
+	}
+	#nav3 .n3btn a {
+	font-size: 20px;
+	padding: 17px;
+	}
+	#nav1 {
+	margin-left: 16px;
+	}
+	#nav1 li a {
+	margin-bottom: 15px;
+	font-size: 28px;
+	}
+	.bgphotobox .bg-not-login {
+	display: block !important;
+	}
+	.boxright {
+	background: rgba(255,255,255,0.9) !important;
+	}
+	#main{
+	background: rgba(255,255,255,0) !important;
+	}
+	.boxright header{
+	background: rgba(255,255,255,0) !important;
+	}
+	#main .dashboard .desktopDashboard {
+	display: none;
+	}
+	#main .dashboard .glance {
+	display: none;
+	}
+	.mobileDashboard {
+	display: block !important;
+	height: 150px;
+	padding: 15px;
+	font-size: 24px;
+	line-height: 36px;
+	}
+	#nav3 li a {
+	font-size: 20px;
+	line-height: 20px;
+	}
+	.lnkGlance, .lnkGlance:hover, .lnkGlance:focus, .lnkGlance:active {
+	font-size: 18px;
+	margin-top: 15px;
+	}
+
+	#mobileProgramSupport {
+	position: absolute;
+	bottom: 0;
+	background-color: #e5b8a3;
+	height: 100px;
+	left: 0;
+	width: 100%;
+	}
+
+	#mobileProgramSupport p a {
+	font-size: 36px;
+	position: absolute;
+	left: 34%;
+	}
+
+	#mobileProgramSupport .mobile-nav2-email {
+	padding-top: 35px;
+	}
+	#nav1 {
+	display: none;
+	}
+	/*** Home Screen CSS Ends ***/
+
+	/*** New Lead CSS Begin ***/
+	.n3btnMobile{
+	display: block;
+	}
+	.n3btnDesktop{
+	display: none;
+	}
+	.newLead1Form div:first-child, .newLead1Form div p{
+	width: 100%;
+	font-size: 24px;
+	}
+	.newLead1Form div {
+	margin-top: 10px;
+	}
+
+	.newLead1Form select {
+		max-width: 500px;
+		width: 100% !important;
+		height: 30px;
+		font-size: 20px;
+		}
+
+	.pMobile {
+	text-align: center;
+	}
+	input.hotel_code.req, input.property_name.req, input.city {
+	max-width: 500px;
+	width: 100% !important;
+
+	}
+	.LocationBrand{
+	font-size: 32px !important;
+	line-height: 40px;
+	}
+	.newLead1Form .lead_frm_button {
+	width: 200px;
+	height: 50px;
+	margin-top: 10px;
+	font-size: 20px;
+	}
+	.table .table {
+	background-color: rgba(255,255,255,0);
+	}
+	.newContactTable p{
+	text-align: center;
+	}
+	.contactRequired, .frm_drop, .frmCompany, .frm_text{
+	max-width: 500px;
+	width: 100% !important;
+
+	}
+	.newLeadForm .frm_label, .frm_labelreq {
+	width: 200px;
+	font-size: 20px;
+	}
+	
+	.frm_textarea {
+	max-width: 500px;
+	width: 100%;
+	margin-bottom: 10px;
+
+	}
+	.newContactTable .table input[type=button]{
+	width: 200px !important;
+	height: 50px !important;
+	font-size: 18px;
+	margin-left: 200px;
+	}
+
+	.dataTables_wrapper {
+		/* width: 820px; */
+	}
+
+	.selectedProps {
+		/*width: 300px;
+		margin-left: -32px;*/
+	}
+
+	td.dataTables_empty {
+		float: left;
+		width: 300px;
+	}
+
+	.table-responsive label {
+		float: left;
+		display: block;
+		margin-right: 20px;
+	}
+
+	div#DataTables_Table_0_paginate {
+		text-align: left;
+	}
+
+	.buttonWrap {
+		/* float: left; */
+		width: 300px;
+		overflow: auto;
+		/* margin-left: -44px; */
+	}
+
+	.buttonWrap input {
+		/* float: left; */
+		font-size: 12px;
+	}
+
+	table.newContactTable.table {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.login-grp .title {
+		font-size: 20px;
+		margin: 20px auto 10px auto;
+	}
+
+	input.btn.btn-warning.btn-sm.SelfEnrollmentBtn {
+		font-size: 10px;
+		padding-left: 6px;
+	}
+
+	.newLeadForm .frm_label {
+		margin: 5px 0;
+	}
+
+	.selectedProps .table-responsive {
+		width: 290px;
+		margin-left: -8px; 
+		/* height: 300px; */
+		overflow-y: auto !important;
+	}
+
+	.propertyCheckbox a {
+		font-size: 1.2em;
+	}
+
+	.selectedProps table.dataTable tbody td {
+	  line-height: 2.0;
+	}
+
+	.selectContactWrapper {
+		overflow: auto;
+	}
+
+	.selectContactWrapper table .lead_frm_text, .selectContactWrapper table .lead_frm_drop, .selectContactWrapper table  {
+		display: block;
+	}
+
+	tr.userLoookup td {
+		display: block;
+		width: 230px;
+		margin: 0 auto;
+	}
+
+	.respTable {
+		overflow-x: scroll;
+		width: 100%;
+	}
+
+	.respTable table {
+		width: 100%; /* Old browser support */
+		
+	}
+
+
+	.fileAttach {
+		display: none;
+	}
+
+	.groupComments textarea {
+		width: 200px;
+	}
+
+	.buttonWrap .frm_label input {
+		width: 250px !important;
+	}
+
+	select.lead_frm_drop.lead_type_id, select.frm_drop.brand.req, select.frm_drop.country_code.country.req, select.frm_drop.state.state_code.req {
+		font-size: 14px;
+	}
+
+	.dashboard {
+		display: none;
+	}
+
+	.mobileDash {
+		display: block !important;
+	}
+
+	.lnkGlance {
+		margin-top: 0;
+		cursor: none;
+	}
+
+	.leadFormReview td.frm_label {
+		min-width: 50px;
+	}
+	
+	.respHeader {
+		color: #d96932 !important;
+		padding-left: 5px !important;
+		background: #d969320f;
+		width: 100% !important;
+
+	}
+
+	.newLeadForm .respHeader, .newLead1Form .respHeader {
+		font-size: 16px !important;
+		height: 35px;	
+		padding: 8px;
+		margin-bottom: 10px;
+	}
+
+	
+	.respTable td {
+		
+		box-sizing:border-box !important; 
+		clear:both;
+		display: block;
+		width: 100%; /* Old browser support */
+
+	}
+
+	.respTable input[type=text] {
+		width: 100%;
+	}
+
+	.respTable select{
+		width: 80%;
+	}
+	
+	.respTable .frm_label {
+		/* padding-left: 25px; */
+
+	}
+
+	.respTable tr.td.respSpacer {
+		border-collapse:separate !important;
+		border-spacing:0 195px !important;
+	}
+
+	.respTable .leadRequired::placeholder {
+		color: #777777;
+		font-size: 14px;
+		
+	}
+	
+	.respTable textarea {
+		width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	}
+}
+
+
+.login {
+    text-align: center;
+}
+
+.login input.frm_text {
+    margin: 10px auto;
+}
+
+.login-grp {
+    margin: 10px auto;
+}
+
+/* END MEDIA QUERY FOR 320 TO 450 PIXEL SCREENS */
+
+
+
+/* Misc: */
+
+@media only screen and (max-width: 1023px) {
+    .selfEnrollment { display: none; }
+}
+
+@media (max-width: 1023px){
+    input.btn.btn-warning.btn-sm.SelfEnrollmentBtn {
+        font-size: 12px;
+        padding-left: 3px;
+    }
+	
+	.dropdown {
+		display: none;
+	}
+
+	.mobileDropdown .dropdown-menu {
+	    left: -80px !important;
+	}
+
+	.mobileDropdown .dropdown-menu li a {
+	    font-size: 1.2em;
+	    line-height: 3.5;
+	}
+	
+	.mobileDropdown {
+		display: block;
+		margin: 24px;
+		position: absolute;
+		right: 0px;
+		top: 100px;
+	}
+	
+	input[type="checkbox"], input[type="radio"] {
+		width: 20px;
+		height: 20px;
+	}
+
+}
+
+.mobileDash {
+    display: none;
+}
+
+
+
+
+
+
