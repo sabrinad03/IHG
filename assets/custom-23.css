@@ -1,0 +1,36 @@
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .headerbox {
+    background: #1f4456;
+  }
+
+  .main-header{
+    padding: 10px 25px 10px 25px;
+  }
+
+  #nav2 li a .btn-style-1{
+    border-radius: 5px;
+    background-color: none;
+    background-color: transparent !important;
+    border: 1px solid #dadada;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  #nav2 ul .btn-section{
+    display: flex !important;
+    width: auto;
+  }
+
+  .dropdown-menu {
+    left: 55% !important;
+  }
+
+  .dropdown a, a:hover {
+    color: white;
+  }
