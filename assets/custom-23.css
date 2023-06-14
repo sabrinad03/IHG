@@ -34,3 +34,297 @@
   .dropdown a, a:hover {
     color: white;
   }
+
+  .mid-section {
+    padding: 50px 50px 50px 50px;
+    background-color: #dcdfe1;
+    justify-content: space-evenly;
+  }
+
+  .section-left{
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .section-right{
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .button-section{
+
+  }
+
+  .lead-btn {
+    padding: 12px 5px 12px 5px;
+    border: 1px solid #1f4456;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    width: 130px;
+
+  }
+
+  .lead-btn-2{
+    padding: 12px 5px 14px 5px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #1f4456;
+    width: 130px;
+    color: white;
+
+  }
+
+  .link-buttons{
+    color: #1f4456;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .link-buttons-2{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .q-links{
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f4456 !important;
+    margin-left: 15px;
+  }
+
+  .quick-links-s1{
+    margin-bottom: 5px;
+  }
+
+  .header-box{
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f4456 !important;
+  }
+
+  .header-box-2{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000 !important;
+  }
+
+  .header-inside-box{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000 !important;
+    text-align: center;
+    margin-bottom: 0px !important;
+  }
+
+  .link-quick{
+    color: black;
+    font-size: 11px;
+    margin-left: 5px;
+    text-transform: uppercase;
+  }
+
+  .lead-box{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f6f6f6;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 28px;
+  }
+
+  .lead-box-2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 28px;
+  }
+
+  .lead-box-3{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 10px 5px 10px 5px;
+  }
+
+  .lead-box-cover{
+    background-color: #f6f6f6;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 28px;
+  }
+
+  .lead-block-type{
+    margin-left: 10px;
+  }
+
+  .lead-block-count{
+    margin-left: 25px;
+  }
+
+  .lead-block-count-2{
+    margin-left: 25px;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .lead-block-count-3{
+    margin-left: 25px;
+    text-align: end;
+    margin-right: 10px;
+  }
+
+  .message-box{
+    background-color: #f6f6f6;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 28px;
+  }
+
+  .lead-type{
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1f4456;
+  }
+
+  .board-message{
+    font-style: italic;
+  }
+
+  .image-text{
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  .feature-gallery{
+    display: flex;
+    justify-content: center;
+    text-align: end;
+  }
+
+  .image-box{
+    margin-left: 20px;
+  }
+
+/*CSS for pie charts */
+
+.pie-wrap{
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 400px;
+    margin: 10% 50px;
+    position: relative;
+    border-radius: 50%;
+    color: black;
+}
+
+.pie-wrap .entry{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *the individual entries* */
+
+.sky-blue{
+  background-color: lightskyblue;
+  height:50%;
+  width: 50%;
+  display: block;
+}
+
+.light-yellow{
+  background-color: lightyellow;
+  height:50%;
+  width: 50%;
+}
+
+.pink{
+  background-color: pink;
+  height:50%;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+
+.purple{
+  background-color: purple;
+  height:50%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  clip-path:polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.green{
+  background-color: limegreen;
+  height:50%;
+  width: 50%;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  clip-path:polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.wheat{
+  background-color: wheat;
+  height:50%;
+  width: 50%;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  clip-path:polygon(0% 0%, 100% 100%, 0% 100%);
+}
+
+.pie-wrap .purple p{
+  position: absolute;
+  top: 140px;
+  color: white;
+}
+.pie-wrap .purple p:first-child{
+  top: 120px;
+}
+
+.pie-wrap .green p{
+  position: absolute;
+  top: 20px;
+}
+
+.pie-wrap .green p:first-child{
+  top: 0px;
+}
+
+.pie-wrap .pink p, .pie-wrap .wheat p{
+  position: absolute;
+  left: 20px;
+  top: 80px;
+}
+
+.pie-wrap .pink, .pie-wrap .wheat{
+  justify-content: flex-start;
+}
+
+.pie-wrap .pink p:first-child, .pie-wrap .wheat p:first-child{
+  top: 100px;
+}
+
+.pie-wrap{
+  border: 2px solid lightgrey;
+  width: 400px;
+  height: 400px;
+  margin: 10% 50px;
+  position: relative;
+  border-radius: 50%;
+  color: black;
+  overflow: hidden;
+}
