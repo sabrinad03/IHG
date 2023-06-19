@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IHG LeadShare - Reporting</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/custom-23.css" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/includes/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/v/bs/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/kt-2.3.0/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/includes/css/jquery-ui.css"
+      media="screen"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/includes/css/freeow/freeow.css"
+      type="text/css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="/includes/css/bootstrap-select.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="/includes/css/sio.css?t=104801"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/assets/style.css?t=104801" />
+    <link
+      rel="stylesheet"
+      href="/includes/css/adminCustomMobile.css?t=104801"
+    />
+    <link rel="stylesheet" href="/includes/css/adminCustom.css?t=104801" />
+
+    <script src="/includes/js/jquery-1.12.4.min.js"></script>
+    <script src="/includes/js/jquery-ui.min.js"></script>
+    <script src="/includes/js/bootstrap.min.js"></script>
+    <script src="/includes/js/bootstrap-select.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/v/bs/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/kt-2.3.0/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/includes/js/dateformat/jquery-dateFormat.min.js"
+    ></script>
+    <script type="text/javascript" src="/includes/js/jquery.freeow.js"></script>
+    <script
+      type="text/javascript"
+      src="/includes/js/jquery.maskedinput.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/includes/js/jquery.hoverintent.min.js"
+    ></script>
+    <script type="text/javascript" src="/includes/js/jquery.dump.js"></script>
+
+    <script
+      type="text/javascript"
+      src="/resources/Javascript/swfobject.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/resources/Javascript/Validate.js"
+    ></script>
+    <script type="text/javascript" src="/assets/script.js"></script>
+    <script
+      type="text/javascript"
+      src="/resources/Javascript/js_library.js"
+    ></script>
+
+    <script type="text/javascript">
+      var OVERRIDE = 0;
+
+      $(document).ready(function () {
+        $(".dollarMask").mask("*9.99", { placeholder: " " });
+        //$(".numberMask").mask("9999", {placeholder: " "});
+        $(".ssnMask").mask("9999");
+        $(".dateMask").mask("99/99/9999");
+        //$(".rateMask").mask("999999.99", {placeholder: " "})
+
+        $(".datePicker").datepicker();
+
+        /*
+		$('#example').DataTable( {
+			"language": {
+				"url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Chinese.json"
+			}
+	    });
+*/
+      });
+
+      $("form").submit(function (e) {
+        if (!OVERRIDE) {
+          $(".required").each(function () {
+            $(this).removeClass("requiredHighlight");
+          });
+
+          $(".required").each(function () {
+            if (!$(this).val().length) {
+              pass = 0;
+              $(this).addClass("requiredHighlight");
+            }
+          });
+
+          if (pass == 0) {
+            alert("Please complete the required fields!");
+            e.preventDefault();
+          }
+        }
+      });
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="/resources/carousel/carousel.css?t=104802"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="/resources/carousel/jquery.carouFredSel-6.2.0.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".promoscroll").carouFredSel({
+          width: "100%",
+          align: false,
+          auto: {
+            timeoutDuration: 250000,
+          },
+          items: {
+            width: 215,
+          },
+          next: {
+            button: ".homepromos .next",
+          },
+          prev: {
+            button: ".homepromos .back",
+          },
+          scroll: {
+            items: 1,
+            pauseOnHover: true,
+          },
+          swipe: {
+            excludedElements: "",
+            onTouch: true,
+          },
+        });
+
+        $(".promoscroll2").carouFredSel({
+          width: "100%",
+          align: false,
+          auto: {
+            timeoutDuration: 250000,
+          },
+          items: {
+            width: 215,
+          },
+          next: {
+            button: ".homepromos2 .next",
+          },
+          prev: {
+            button: ".homepromos2 .back",
+          },
+          scroll: {
+            items: 1,
+            pauseOnHover: true,
+          },
+          swipe: {
+            excludedElements: "",
+            onTouch: true,
+          },
+        });
+
+        $(".lnkGlance").on("mouseover", function () {
+          $(".glance").slideDown();
+        });
+
+        $(".lnkGlance").on("mouseout", function () {
+          $(".glance").slideUp();
+        });
+
+        $(".lnkPropertyName").click(function () {
+          var data = {},
+            url = "/com/property.cfc?method=getPropertyHighlight&showDesc=0";
+
+          data.propid = $(this).data("propid");
+          data.showDesc = 0;
+
+          $.ajax({
+            type: "post",
+            data: data,
+            url: url,
+            async: false,
+            success: function (result) {
+              var ret = JSON.parse(result);
+              console.log(data);
+              console.log(ret);
+
+              if (ret.SUCCESS == true) {
+                $(".propHighlight").html(ret.html);
+                $("#propertyHighlightModal").modal("show");
+              }
+            },
+          });
+        });
+
+        $(".btnClose").click(function () {
+          $("#propertyHighlightModal").modal("hide");
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // $('table').addClass('table table-striped');
+        $("table").addClass("table");
+      });
+    </script>
+  </head>
+  <body class="container-fluid">
+    <div class="bgphoto">
+      <div class="bgphotobox scaleme">
+        <img src="/files/homeImages/home.jpg" />
+      </div>
+    </div>
+    <div class="boxright">
+      <header class="main-header">
+        <div class="headerbox">
+          <div class="logo">
+            <a href="/" class="ir">ShareIt Online: Hotels + Resorts Leads</a>
+          </div>
+          <div class="welcome">Welcome back Interactive</div>
+          <nav id="nav1">
+            <ul>
+              <li>
+                <a href="#">Lead Management</a>
+                <ul>
+                  <li><a href="index.cfm?f=new.main&2">Create New Lead</a></li>
+
+                  <li><a href="index.cfm?f=sent.main&2">View Sent Leads</a></li>
+
+                  <li>
+                    <a href="index.cfm?f=unsent.main&2">View Unsent Leads</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=changeProperty.main&2"
+                      >View My Hotels</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">Resources</a>
+                <ul>
+                  <li>
+                    <a href="index.cfm?f=securitymyFavorites.main&2"
+                      >My Favorites</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=securitycommissioncalc.main&2"
+                      >Commission Application</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=userlookup.main&2">User Look-Up</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=recognition.main&2"
+                      >Recognition Page</a
+                    >
+                  </li>
+
+                  <li><a href="javascript:openKC();">Knowledge Center</a></li>
+
+                  <li>
+                    <a href="index.cfm?f=PropertyLookup.main&2"
+                      >Property Look-Up</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="javascript:openFAQ();"
+                      >Frequently Asked Questions</a
+                    >
+                  </li>
+
+                  <li><a href="javascript:openFAQ();"></a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">Reporting</a>
+                <ul>
+                  <li>
+                    <a href="index.cfm?f=management.main&2"
+                      >Management Reports</a
+                    >
+                  </li>
+
+                  <li><a href="index.cfm?f=user.main&2">User Report</a></li>
+
+                  <li>
+                    <a href="index.cfm?f=user.propertiesNouser&2"
+                      >Properties No-User Report</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=user.userFavs&2"
+                      >User Favorites Report</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">Administration</a>
+                <ul>
+                  <li>
+                    <a href="index.cfm?f=QuickLinks.list&2"
+                      >Quick Links Admin</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=SecurityApplications.main&2"
+                      >Application Registry</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=securityonboarding.main&2"
+                      >Onboarding</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=securityRoles.main&2">Roles Admin</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=securityselfenroll.approval&2"
+                      >Self-Enroll Approval</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=SecurityUsers.main&2"
+                      >User Account Manager</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=securityWorkgroups.main&2"
+                      >Work Group Admin</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=clientAdmin.main&2">Client Admin</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=clientlistmanager.main&2"
+                      >Client List Manager</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=account.main&2">Account Admin</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=propertyHighlight.main&2"
+                      >Featured Properties Admin</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=PropertyAdmin.main&2"
+                      >Property Admin</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=messageBoard.main&2">Message Board</a>
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=homePageImage.main&2"
+                      >Background Image Selector</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=listmanager.main&2"
+                      >Data List Manager</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="index.cfm?f=knowledgebase.main&2"
+                      >Knowledge Center Admin
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="index.cfm?f=security.logoff&2">Log Off</a></li>
+            </ul>
+          </nav>
+          <nav id="nav2">
+            <ul class="btn-section" style="display: flex; width: auto">
+              <li class="nav2-flag" title="Flags">
+                <a href="#">
+                  <img
+                    src="icons/flag-icon.png"
+                    alt="icon of the user"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav2-profile" title="My Profile">
+                <a href="/index.cfm?f=securitymyaccount.main">
+                  <img
+                    src="icons/user-icon.png"
+                    alt="icon of the user"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav2-email" title="Program Support">
+                <a href="mailto:leadshare@ihg.com">
+                  <button type="button" class="btn-style-1">Sign Out</button>
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown" style="margin-top: 12px">
+              <a href="#" style="color: white; margin-right: 15px">
+                <img
+                  src="icons/calendar-icon.png"
+                  alt="icon of the user"
+                  width="40"
+                  height="40"
+                  style="vertical-align: middle"
+                />
+                January 16, 2023,
+              </a>
+
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <img
+                  src="icons/world-icon.png"
+                  alt="icon of the user"
+                  width="40"
+                  height="40"
+                  style="vertical-align: middle"
+                />
+                12.00pm CST
+              </a>
+              <ul class="dropdown-menu" style="left: -20px">
+                <li><a href="?f=security.setlang&&lang=en"></a></li>
+                <li><a href="?f=security.setlang&&lang=zh"></a></li>
+                <li><a href="?f=security.setlang&&lang=sp"></a></li>
+                <li><a href="?f=security.setlang&&lang=po"></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="mobileDropdown" style="margin-top: 12px">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+            >Select Language <b class="caret"></b
+          ></a>
+          <ul class="dropdown-menu" style="left: -20px">
+            <li><a href="?f=security.setlang&&lang=en">English</a></li>
+            <li>
+              <a href="?f=security.setlang&&lang=zh">Simplified Chinese</a>
+            </li>
+            <li><a href="?f=security.setlang&&lang=sp">Spanish</a></li>
+            <li><a href="?f=security.setlang&&lang=po">Portugese</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="mid-section-inside row" style="display: flex">
+        <div class="section-tabs col-lg-12 col-md-12">
+          <div class="content-tabs row">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Home
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  Profile
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Contact
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="propertyHighlightModal"
+        class="modal fade"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="propertyHighlightModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg2">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btnClose close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">FEATURED PROPERTIES</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row propHighlight"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      language="JavaScript"
+      src="/Resources/scroll/vscroll_code.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
